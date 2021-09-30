@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Track Pairs and Tokens on PancakeSwap (v2) protocol
-repository: https://github.com/pancakeswap
+description: Track Pairs and Tokens on Tosha (v2) protocol
+repository: https://github.com/Tosha
 schema:
   file: ./schema.graphql
 dataSources:
