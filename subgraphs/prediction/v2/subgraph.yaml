@@ -1,16 +1,16 @@
 specVersion: 0.0.2
 description: Pancake Prediction V2
-repository: https://github.com/pancakeswap
+repository: https://github.com/Tosha
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: PredictionV2
-    network: bsc
+    network: avax
     source:
-      address: '0x18B2A687610328590Bc8F2e5fEdDe3b582A49cdA'
+      address: '0x19C2A68761032859CDc8F2e5fEdDe3b582AQ8cdH'
       abi: PredictionV2
-      startBlock: 10333825
+      startBlock: 000000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4

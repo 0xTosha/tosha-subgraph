@@ -1,40 +1,43 @@
 # Tosha Subgraph
 
-TheGraph exposes a GraphQL endpoint to query the events and entities within the Binance Smart Chain and 0xtosha ecosystem.
+TheGraph exposes a GraphQL endpoint to query the events and entities within the Binance Smart Chain and tosha ecosystem.
 
-Currently, there are multiple subgraphs, but additional subgraphs can be added to this repo:
+Currently, there are multiple subgraphs, but additional subgraphs can be added to this repository, following the current architecture.
 
-1. **[Blocks](https://thegraph.com/legacy-explorer/subgraph/0xtosha/blocks)**: Tracks all blocks on Binance Smart Chain.
+## Subgraphs
 
-2. **[Exchange](https://0xtosha.medium.com/0xtosha-info-relaunch-in-partnership-with-150-000-bounty-winner-streamingfast-f7892559d388)**: Tracks all 0xtosha Exchange data with price, volume, liquidity, ...
+1. **[Blocks](https://thegraph.com/legacy-explorer/subgraph/tosha/blocks)**: Tracks all blocks on Binance Smart Chain.
 
-3. **[Farm Auctions](https://thegraph.com/legacy-explorer/subgraph/0xtosha/farm-auctions)**: Tracks all 0xtosha Farm Auctions with auctions and bids.
+2. **[Exchange](https://tosha.medium.com/tosha-info-relaunch-in-partnership-with-150-000-bounty-winner-streamingfast-f7892559d388)**: Tracks all tosha Exchange data with price, volume, liquidity, ...
 
-4. **[Lottery](https://thegraph.com/legacy-explorer/subgraph/0xtosha/lottery)**: Tracks all 0xtosha Lottery with rounds, draws and tickets.
+3. **[Farm Auctions](https://thegraph.com/legacy-explorer/subgraph/tosha/farm-auctions)**: Tracks all tosha Farm Auctions with auctions and bids.
 
-5. **[NFT Market (v1)](https://thegraph.com/legacy-explorer/subgraph/0xtosha/nft-market)**: Tracks all 0xtosha NFT Market for ERC-721.
+4. **[Lottery](https://thegraph.com/legacy-explorer/subgraph/tosha/lottery)**: Tracks all tosha Lottery with rounds, draws and tickets.
 
-6. **[Pairs](https://thegraph.com/legacy-explorer/subgraph/0xtosha/pairs)**: Tracks all 0xtosha Pairs and Tokens.
+5. **[NFT Market (v1)](https://thegraph.com/legacy-explorer/subgraph/tosha/nft-market)**: Tracks all tosha NFT Market for ERC-721.
 
-7. **[Pancake Squad](https://thegraph.com/legacy-explorer/subgraph/0xtosha/pancake-squad)**: Tracks all Pancake Squad metrics with Owners, Tokens (including metadata), and Transactions.
+6. **[Pairs](https://thegraph.com/legacy-explorer/subgraph/tosha/pairs)**: Tracks all tosha Pairs and Tokens.
 
-8. **[Prediction (v1)](https://thegraph.com/legacy-explorer/subgraph/0xtosha/prediction)**: Tracks all 0xtosha Prediction (v1) with market, rounds, and bets.
+7. **[Pancake Squad](https://thegraph.com/legacy-explorer/subgraph/tosha/pancake-squad)**: Tracks all Pancake Squad metrics with Owners, Tokens (including metadata), and Transactions.
 
-9. **[Prediction (v2)](https://thegraph.com/legacy-explorer/subgraph/0xtosha/prediction-v2)**: Tracks all 0xtosha Prediction (v2) with market, rounds, and bets.
+8. **[Prediction (v1)](https://thegraph.com/legacy-explorer/subgraph/tosha/prediction)**: Tracks all tosha Prediction (v1) with market, rounds, and bets.
 
-10. **[Profile](https://thegraph.com/legacy-explorer/subgraph/0xtosha/profile)**: Tracks all 0xtosha Profile with teams, users, points and campaigns.
+9. **[Prediction (v2)](https://thegraph.com/legacy-explorer/subgraph/tosha/prediction-v2)**: Tracks all tosha Prediction (v2) with market, rounds, and bets.
 
-11. **[SmartChef](https://thegraph.com/legacy-explorer/subgraph/0xtosha/smartchef)**: Tracks all 0xtosha SmartChef (a.k.a. Syrup Pools) with tokens and rewards.
+10. **[Profile](https://thegraph.com/legacy-explorer/subgraph/tosha/profile)**: Tracks all tosha Profile with teams, users, points and campaigns.
 
-12. **[Timelock](https://thegraph.com/legacy-explorer/subgraph/0xtosha/timelock)**: Tracks all 0xtosha Timelock queued, executed, and cancelled transactions.
+11. **[SmartChef](https://thegraph.com/legacy-explorer/subgraph/tosha/smartchef)**: Tracks all tosha SmartChef (a.k.a. Syrup Pools) with tokens and rewards.
 
-13. **[Trading Competition (v1)](https://thegraph.com/legacy-explorer/subgraph/0xtosha/trading-competition-v1)**: Tracks all metrics for the Easter Battle (April 07—14, 2021).
+12. **[Timelock](https://thegraph.com/legacy-explorer/subgraph/tosha/timelock)**: Tracks all tosha Timelock queued, executed, and cancelled transactions.
 
-## v1
+13. **[Trading Competition (v1)](https://thegraph.com/legacy-explorer/subgraph/tosha/trading-competition-v1)**: Tracks all metrics for the Easter Battle (April 07—14, 2021).
 
-To access subgraphs related to 0xtosha v1 ecosystem ([article](https://0xtosha.medium.com/the-great-migration-vote-4093cb3edf23)), use [`v1`](https://github.com/0xtosha/pancake-subgraph/tree/v1) branch.
+## Dependencies
 
-## To setup and deploy
+- [Graph CLI](https://github.com/graphprotocol/graph-cli)
+    - Required to generate and build local GraphQL dependencies.
+
+## Deployment
 
 For any of the subgraph: `blocks` as `[subgraph]`
 
@@ -47,3 +50,7 @@ For any of the subgraph: `blocks` as `[subgraph]`
 4. Run `graph auth --product hosted-service '<ACCESS_TOKEN>'`
 
 5. Deploy via `yarn deploy`.
+
+## v1
+
+To access subgraphs related to tosha v1 ecosystem ([article](https://tosha.medium.com/the-great-migration-vote-4093cb3edf23)), use [`v1`](https://github.com/tosha/pancake-subgraph/tree/v1) branch.

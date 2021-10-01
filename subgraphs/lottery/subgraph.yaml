@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: PancakeSwap Lottery
-repository: https://github.com/pancakeswap
+description: Tosha Lottery
+repository: https://github.com/Tosha
 schema:
   file: ./schema.graphql
 dataSources:
